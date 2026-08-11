@@ -505,6 +505,7 @@ body {
     gap: 12px;
     margin-top: 5px;
     margin-left: 8px;
+    width: 100%;
 }
 
 .articleItem {
