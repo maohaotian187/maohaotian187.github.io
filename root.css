@@ -7,6 +7,7 @@
 /* ===== 浅色主题（默认） ===== */
 html {
     --main_bg_color: linear-gradient(160deg, #cfe8ff 0%, #eaf2ff 45%, #ffffff 100%);
+    --bg_image: url("background.jpg");
     --main_text_color: #1a1a1a;
     --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
     --purple_text_color: #6d5efc;
@@ -19,13 +20,14 @@ html {
     --left_tag_item: linear-gradient(50deg, #a2d1ff, #ffffff);
     --card_filter: 0px;
     --back_filter: 0px;
-    --back_filter_color: #00000010;
+    --back_filter_color: #ffffff66;
     --fill: #000000;
 }
 
 /* ===== 深色主题 ===== */
 html[data-theme="Dark"] {
     --main_bg_color: linear-gradient(160deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    --bg_image: url("Mars_background.jpg");
     --main_text_color: #eeeeee;
     --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
     --purple_text_color: #747bff;
@@ -38,6 +40,6 @@ html[data-theme="Dark"] {
     --left_tag_item: linear-gradient(50deg, #1f2327, #000000);
     --card_filter: 0px;
     --back_filter: 0px;
-    --back_filter_color: #00000030;
+    --back_filter_color: #00000066;
     --fill: #ffffff;
 }

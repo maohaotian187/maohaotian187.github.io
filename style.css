@@ -72,7 +72,8 @@ html[data-theme="Dark"] {
     --left_tag_item: linear-gradient(50deg, #1f2327, #000000);
     --card_filter: 0px;
     --back_filter: 0px;
-    --back_filter_color: #000000;
+    --back_filter_color: #00000066;
+    --bg_image: url("Mars_background.jpg");
     --fill:#ffffff;
 }
 
@@ -83,11 +84,11 @@ body {
     width: 100%;
     position: relative;
     font-family: "Ubuntu", "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: var(--main_bg_color);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: var(--bg_image), var(--main_bg_color);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+    background-attachment: fixed, fixed;
     transition: color 0.1s ease;
     color: var(--main_text_color);
 
@@ -507,6 +508,85 @@ body {
 
 .title:hover {
     transform: translateY(-5px);
+}
+
+/* ===== Articles 文章卡片 ===== */
+.articleList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.articleItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: var(--item_bg_color);
+    border: 1px solid #ffffff20;
+    border-radius: 12px;
+    padding: 16px 18px;
+    backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));
+    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    color: var(--main_text_color);
+}
+
+.articleItem:hover {
+    transform: translateY(-3px);
+    background-color: var(--item_hover_color);
+    border-color: #ffffff40;
+    box-shadow: 0 10px 22px -8px #00000040;
+}
+
+.articleItemMain {
+    flex: 1;
+    min-width: 0;
+}
+
+.articleItemMain h1 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    color: var(--item_left_title_color);
+}
+
+.articleAuthors {
+    font-size: 12.5px;
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: var(--item_left_text_color);
+}
+
+.articleMeta {
+    font-size: 12.5px;
+    margin: 0;
+    color: var(--purple_text_color);
+}
+
+.articleJournal {
+    font-weight: 700;
+}
+
+.articleItemRight {
+    flex-shrink: 0;
+    width: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--purple_text_color);
+}
+
+.articleItem:hover .articleItemRight svg {
+    transform: translate(3px, -3px);
+    transition: transform 0.25s ease;
+}
+
+@media (max-width: 800px) {
+    .articleItemRight {
+        display: none;
+    }
 }
 
 .projectList {
