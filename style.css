@@ -504,6 +504,7 @@ body {
     flex-direction: column;
     gap: 12px;
     margin-top: 5px;
+    margin-left: 8px;
 }
 
 .articleItem {
@@ -512,7 +513,7 @@ body {
     gap: 14px;
     background-color: var(--item_bg_color);
     border: 1px solid #ffffff20;
-    border-radius: 12px;
+    border-radius: 13px;
     padding: 16px 18px;
     backdrop-filter: blur(var(--card_filter));
     -webkit-backdrop-filter: blur(var(--card_filter));
