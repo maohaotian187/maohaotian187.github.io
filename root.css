@@ -7,7 +7,8 @@
 /* ===== 浅色主题（默认） ===== */
 html {
     --main_bg_color: linear-gradient(160deg, #cfe8ff 0%, #eaf2ff 45%, #ffffff 100%);
-    --bg_image: url("background.jpg");
+    --bg_image: url("Mars_background.jpg");
+    --avatar_image: url("background.jpg");
     --main_text_color: #1a1a1a;
     --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
     --purple_text_color: #6d5efc;
@@ -28,6 +29,7 @@ html {
 html[data-theme="Dark"] {
     --main_bg_color: linear-gradient(160deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
     --bg_image: url("Mars_background.jpg");
+    --avatar_image: url("background.jpg");
     --main_text_color: #eeeeee;
     --gradient: linear-gradient(120deg, #bd34fe, #e0321b 30%, #41d1ff 60%);
     --purple_text_color: #747bff;

@@ -191,16 +191,10 @@ body {
     aspect-ratio: 1/1;
     margin-top: 50px;
     border-radius: 50%;
-    background: radial-gradient(circle at 35% 30%, #a78bfa 0%, #6d5efc 45%, #4f46e5 100%);
-}
-
-.logo::after {
-    content: "";
-    position: absolute;
-    inset: -6%;
-    border-radius: 50%;
-    border: 3px solid rgba(196, 181, 253, 0.7);
-    transform: rotate(-22deg) scaleY(0.42);
+    background-image: var(--avatar_image);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 24px -8px #00000040;
 }
 
 .right-div {
@@ -333,17 +327,11 @@ body {
     max-width: 200px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    border: 0.5px solid #ffffff;
-    background: radial-gradient(circle at 35% 30%, #a78bfa 0%, #6d5efc 45%, #4f46e5 100%);
-}
-
-.index-logo::after {
-    content: "";
-    position: absolute;
-    inset: -6%;
-    border-radius: 50%;
-    border: 3px solid rgba(196, 181, 253, 0.7);
-    transform: rotate(-22deg) scaleY(0.42);
+    border: 2px solid #ffffff;
+    background-image: var(--avatar_image);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 24px -8px #00000055;
 }
 
 .description {
