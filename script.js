@@ -75,7 +75,7 @@ function getCookie(name) {
 // ===== 中英双语切换 =====
 // 范围：欢迎语/描述、各区块标题、左侧位置、QQ弹窗、页脚、全部时间线，以及左侧标签云。
 // 技能条标签保持原样（不随语言切换）。
-// 默认跟随浏览器语言，手动切换后用 Cookie(langState) 记忆。
+// 默认中文；手动切换后用 Cookie(langState) 记忆（覆盖默认）。
 var I18N = {
     zh: {
         welcome: '欢迎来到 <span class="gradientText">天地日志</span>',
@@ -194,8 +194,9 @@ var I18N = {
 function getLang() {
     var c = getCookie('langState');
     if (c === 'zh' || c === 'en') return c;
-    var nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-    return nav.indexOf('zh') === 0 ? 'zh' : 'en';
+    // 默认中文：曾有用户浏览器语言被识别为英文，导致首次打开整页进英文模式
+    // （标签、标题、页脚全部英文）。改为固定中文默认，手动切换后由 Cookie 记忆。
+    return 'zh';
 }
 
 function applyLang(lang) {
