@@ -226,15 +226,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // 隐藏加载动画（原 Django 版不会自动消失，这里修复）
+    // 关键：不依赖 window.load —— 外部脚本/字体拖慢 load 时遮罩会长时间不消失并频闪
     var loading = document.getElementById('Martin-loading');
     function hideLoading() {
-        if (!loading) return;
+        if (!loading || loading.dataset.hidden) return;
+        loading.dataset.hidden = '1';
         loading.classList.add('hidden');
         setTimeout(function () { loading.style.display = 'none'; }, 650);
     }
-    if (document.readyState === 'complete') {
-        hideLoading();
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', hideLoading);
     } else {
-        window.addEventListener('load', hideLoading);
+        hideLoading();
     }
+    // 兜底：无论如何 1.2s 后强制隐藏，避免外部资源卡住导致遮罩常驻
+    setTimeout(hideLoading, 1200);
+    window.addEventListener('load', hideLoading);
 });

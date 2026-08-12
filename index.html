@@ -403,7 +403,10 @@
     </div>
     
 
-    <script src="./script.js"></script>
-    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    <script>LA.init({ id: "KFqltKSkJgQTGD9l", ck: "KFqltKSkJgQTGD9l" })</script>
+    <script defer src="./script.js"></script>
+    <script async charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>
+        function initLA() { if (window.LA) LA.init({ id: "KFqltKSkJgQTGD9l", ck: "KFqltKSkJgQTGD9l" }); }
+        if (window.LA) initLA(); else window.addEventListener('load', initLA);
+    </script>
 </html>
