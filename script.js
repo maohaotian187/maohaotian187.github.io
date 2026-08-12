@@ -36,6 +36,20 @@ var tcMain = document.querySelector('.tc-main');
 if (tc) tc.addEventListener('click', function () { pop(); });
 if (tcMain) tcMain.addEventListener('click', function (event) { event.stopPropagation(); });
 
+// QQ 二维码：移动端点击切换显示（桌面端用 hover，触屏用点击）
+var qqItem = document.getElementById('qqItem');
+if (qqItem) {
+    qqItem.addEventListener('click', function (e) {
+        e.stopPropagation();
+        qqItem.classList.toggle('qqActive');
+    });
+    document.addEventListener('click', function (e) {
+        if (qqItem.classList.contains('qqActive') && !qqItem.contains(e.target)) {
+            qqItem.classList.remove('qqActive');
+        }
+    });
+}
+
 // Cookie 读写（记住主题）
 function setCookie(name, value, days) {
     var expires = '';
