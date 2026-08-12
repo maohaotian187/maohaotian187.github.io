@@ -96,7 +96,7 @@ body {
 
 
 #Martin-loading {
-    background: radial-gradient(white, #d8eaff);
+    background: var(--loading_bg);
     background-size: 100%;
     background-position: center;
 

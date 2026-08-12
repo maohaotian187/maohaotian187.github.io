@@ -1,10 +1,10 @@
 /*
  * root.css — GitHub Pages 适配版
  * 纯 CSS 变量 + 渐变背景，不依赖任何外部图片 / 字体文件。
- * 浅色为默认主题，深色通过 html[data-theme="Dark"] 切换（由 script.js 控制，Cookie 记忆）。
+ * 深色为默认主题，浅色通过 html[data-theme="Light"] 切换（由 script.js 控制，Cookie 记忆）。
  */
 
-/* ===== 浅色主题（默认） ===== */
+/* ===== 浅色主题 ===== */
 html {
     --main_bg_color: linear-gradient(160deg, #cfe8ff 0%, #eaf2ff 45%, #ffffff 100%);
     --bg_image: url("Mars_background.jpg");
@@ -23,6 +23,7 @@ html {
     --back_filter: 0px;
     --back_filter_color: #ffffff66;
     --fill: #000000;
+    --loading_bg: radial-gradient(circle, #eaf2ff, #cfe8ff);
 }
 
 /* ===== 深色主题 ===== */
@@ -44,4 +45,5 @@ html[data-theme="Dark"] {
     --back_filter: 0px;
     --back_filter_color: #00000066;
     --fill: #ffffff;
+    --loading_bg: radial-gradient(circle, #302b63, #0f0c29);
 }
