@@ -721,7 +721,13 @@ body {
 .skill {
     padding: 25px;
     width: 100%;
+    box-sizing: border-box;
     overflow: auto;
+    background-color: var(--item_bg_color);
+    border: 1px solid #ffffff20;
+    border-radius: 13px;
+    backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));
 }
 
 .skill img {
