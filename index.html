@@ -7,7 +7,7 @@
     <title>天地日志</title>
     <link rel="icon" href="martin_web.ico" type="image/x-icon">
     <meta name="description" content="拓展视野,勇于尝试,朴素求真务实.....">
-    <meta name="keywords" content="天地日志主页,tiandirizhi">
+    <meta name="keywords" content="天地日志主页,TDRZ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,21 +30,21 @@
                     <svg t="1705773709627" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1478">
                         <path d="M512 249.976471c-99.388235 0-180.705882 81.317647-180.705882 180.705882s81.317647 180.705882 180.705882 180.705882 180.705882-81.317647 180.705882-180.705882-81.317647-180.705882-180.705882-180.705882z m0 301.17647c-66.258824 0-120.470588-54.211765-120.470588-120.470588s54.211765-120.470588 120.470588-120.470588 120.470588 54.211765 120.470588 120.470588-54.211765 120.470588-120.470588 120.470588z" p-id="1479"></path>
                         <path d="M512 39.152941c-216.847059 0-391.529412 174.682353-391.529412 391.529412 0 349.364706 391.529412 572.235294 391.529412 572.235294s391.529412-222.870588 391.529412-572.235294c0-216.847059-174.682353-391.529412-391.529412-391.529412z m0 891.482353C424.658824 873.411765 180.705882 686.682353 180.705882 430.682353c0-183.717647 147.576471-331.294118 331.294118-331.294118s331.294118 147.576471 331.294118 331.294118c0 256-243.952941 442.729412-331.294118 499.952941z" p-id="1480"></path>
-                    </svg>China-Hubei</div>
+                    </svg><span data-i18n="leftLoc">China-Hubei</span></div>
             </div>
             <div class="left-div left-tag">
-                <div class="left-tag-item">Web</div>
+                <div class="left-tag-item">网页</div>
                 <div class="left-tag-item">Python</div>
                 <div class="left-tag-item">Linux</div>
-                <div class="left-tag-item">Deep Learning</div>
-                <div class="left-tag-item">Computational Simulation</div>
-                <div class="left-tag-item">Planetary Science</div>
-                <div class="left-tag-item">Biology</div>
-                <div class="left-tag-item">Popular science</div>
-                <div class="left-tag-item">Fieldwork</div>
+                <div class="left-tag-item">深度学习</div>
+                <div class="left-tag-item">计算模拟</div>
+                <div class="left-tag-item">行星科学</div>
+                <div class="left-tag-item">生物学</div>
+                <div class="left-tag-item">科普</div>
+                <div class="left-tag-item">野外实践</div>
             </div>
             <div class="left-div left-time">
-                <ul id="line">
+                <ul id="line" data-i18n="leftTimeline">
                     <li>
                         <div class="focus"></div>
                         <div>敬请期待</div>
@@ -76,13 +76,13 @@
         <div class="Martin-right">
             <header>
                 <div class="index-logo"></div>
-                <div class="welcome">
+                <div class="welcome" data-i18n="welcome">
                     欢迎来到 
                     <span class="gradientText"> 天地日志 </span>
                 </div>
-                <div class="description"><span class="purpleText">Student</span> and Developer
+                <div class="description" data-i18n="desc1"><span class="purpleText">Student</span> and Developer
                 </div>
-                <div class="description">Now, it is <span class="purpleText textBackground">time</span> to
+                <div class="description" data-i18n="desc2">Now, it is <span class="purpleText textBackground">time</span> to
                     fight for my <span class="purpleText textBackground">dream</span>. </div>
 
                 <div class="iconContainer">
@@ -101,7 +101,7 @@
                         <div class="iconTip">QQ</div>
                         <div class="qqQrPopup">
                             <img src="QQ-QRcode.jpg" alt="QQ 二维码">
-                            <span class="qqQrText">扫码加我 QQ</span>
+                            <span class="qqQrText" data-i18n="qqPopup">扫码加我 QQ</span>
                         </div>
                     </div>
                     <a class="iconItem" href="https://orcid.org/0009-0004-5798-1601" target="_blank" rel="noopener">
@@ -110,6 +110,7 @@
                             <path fill="#FFFFFF" d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7 0-21.5-13.7-39.7-43.7-39.7h-23.7v79.4z"/>
                         </svg>
                         <div class="iconTip">ORCID</div></a>
+                    <button class="langSwitch" id="langSwitch" type="button" aria-label="切换语言 / Switch language">EN</button>
                     <a class="switch" href="javascript:void(0)">
                         <div class="onoffswitch">
                             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
@@ -138,7 +139,7 @@
             <div>
                 <div class="title"><svg t="1705257422086" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1891" >
                         <path d="M629.333333 202.666667v213.333333h277.333334v448h-512v-213.333333h-277.333334v-448h512z m213.333334 277.333333h-213.333334v170.666667h-170.666666v149.333333h384v-320z m-277.333334-213.333333h-384v320h213.333334v-170.666667h170.666666v-149.333333z m0 213.333333h-106.666666v106.666667h106.666666v-106.666667z"  p-id="1892"></path>
-                    </svg>Articles
+                    </svg><span data-i18n="titleArticles">Articles</span>
                 </div>
                 <div class="articleList">
                     <a class="articleItem" target="_blank" rel="noopener" href="https://doi.org/10.1039/d6cc02008a">
@@ -164,7 +165,7 @@
                 </div>
 
                 <div class="right-div left-time">
-                    <ul id="line">
+                    <ul id="line" data-i18n="articlesTimeline">
                         <li>
                             <div class="focus"></div>
                             <div>论文撰写中，敬请期待……</div>
@@ -195,10 +196,10 @@
 
                 <div class="title"><svg t="1705257422086" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1891" >
                         <path d="M629.333333 202.666667v213.333333h277.333334v448h-512v-213.333333h-277.333334v-448h512z m213.333334 277.333333h-213.333334v170.666667h-170.666666v149.333333h384v-320z m-277.333334-213.333333h-384v320h213.333334v-170.666667h170.666666v-149.333333z m0 213.333333h-106.666666v106.666667h106.666666v-106.666667z"  p-id="1892"></path>
-                    </svg>Reviews
+                    </svg><span data-i18n="titleReviews">Reviews</span>
                 </div>
                 <div class="right-div left-time">
-                    <ul id="line">
+                    <ul id="line" data-i18n="reviewsTimeline">
                         <li>
                             <div class="focus"></div>
                             <div>第四次投稿，二审中……</div>
@@ -264,9 +265,9 @@
 
                 <div class="title"><svg t="1705257422086" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1891" >
                     <path d="M629.333333 202.666667v213.333333h277.333334v448h-512v-213.333333h-277.333334v-448h512z m213.333334 277.333333h-213.333334v170.666667h-170.666666v149.333333h384v-320z m-277.333334-213.333333h-384v320h213.333334v-170.666667h170.666666v-149.333333z m0 213.333333h-106.666666v106.666667h106.666666v-106.666667z"  p-id="1892"></path>
-                </svg>Field practice</div>
+                </svg><span data-i18n="titleField">Field practice</span></div>
                 <div class="right-div left-time">
-                    <ul id="line">
+                    <ul id="line" data-i18n="fieldTimeline">
                         <li>
                             <div class="focus"></div>
                             <div>湖北·武当山</div>
@@ -312,7 +313,7 @@
 
                 <div class="title"><svg t="1705257422086" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1891" >
                     <path d="M629.333333 202.666667v213.333333h277.333334v448h-512v-213.333333h-277.333334v-448h512z m213.333334 277.333333h-213.333334v170.666667h-170.666666v149.333333h384v-320z m-277.333334-213.333333h-384v320h213.333334v-170.666667h170.666666v-149.333333z m0 213.333333h-106.666666v106.666667h106.666666v-106.666667z"  p-id="1892"></path>
-                </svg>News Web Links</div>
+                </svg><span data-i18n="titleNews">News Web Links</span></div>
                 <div class="projectList">
                     <a class="projectItem a" target="_blank" href="https://www.nature.com/">
                         <div class="projectItemLeft">
@@ -355,7 +356,7 @@
                 <div class="title">
                     <svg t="1705257823317" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7833" >
                         <path d="M395.765333 586.570667h-171.733333c-22.421333 0-37.888-22.442667-29.909333-43.381334L364.768 95.274667A32 32 0 0 1 394.666667 74.666667h287.957333c22.72 0 38.208 23.018667 29.632 44.064l-99.36 243.882666h187.050667c27.509333 0 42.186667 32.426667 24.042666 53.098667l-458.602666 522.56c-22.293333 25.408-63.626667 3.392-54.976-29.28l85.354666-322.421333zM416.714667 138.666667L270.453333 522.581333h166.869334a32 32 0 0 1 30.933333 40.181334l-61.130667 230.954666 322.176-367.114666H565.312c-22.72 0-38.208-23.018667-29.632-44.064l99.36-243.882667H416.714667z"  p-id="7834"></path>
-                    </svg>skills</div>
+                    </svg><span data-i18n="titleSkills">skills</span></div>
                 <div class="skill">
                     <svg id="skillPc" viewBox="0 0 600 245" xmlns="http://www.w3.org/2000/svg" style="color: var(--main_text_color)">
                         <g font-family="'Ubuntu', sans-serif" font-size="17" fill="currentColor">
@@ -391,7 +392,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer data-i18n="footer">
         天地日志 © 2025 |
         <a href="https://github.com/maohaotian187" target="_blank" rel="noopener">GitHub</a>
     </footer>
