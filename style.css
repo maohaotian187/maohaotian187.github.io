@@ -438,6 +438,41 @@ body {
     flex-shrink: 0;
 }
 
+/* 语言切换按钮：与 .switch 对齐一致 */
+.langSwitch {
+    width: auto;
+    min-width: 46px;
+    height: 43px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    display: flex;
+    margin-left: 10px;
+    backdrop-filter: blur(var(--card_filter));
+    -webkit-backdrop-filter: blur(var(--card_filter));
+    background: var(--item_bg_color);
+    color: var(--main_text_color);
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.langSwitch:hover {
+    background: var(--item_hover_color);
+    transform: translateY(-2px);
+}
+
+.langSwitch:active {
+    transform: translateY(0);
+}
+
 .iconTip {
     white-space: nowrap;
     display: none;
