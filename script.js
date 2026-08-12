@@ -73,8 +73,8 @@ function getCookie(name) {
 }
 
 // ===== 中英双语切换 =====
-// 范围：欢迎语/描述、各区块标题、左侧位置、QQ弹窗、页脚、以及全部时间线。
-// 技能条标签保持原样；左侧标签云改为中文（有对应中文者使用中文）。
+// 范围：欢迎语/描述、各区块标题、左侧位置、QQ弹窗、页脚、全部时间线，以及左侧标签云。
+// 技能条标签保持原样（不随语言切换）。
 // 默认跟随浏览器语言，手动切换后用 Cookie(langState) 记忆。
 var I18N = {
     zh: {
@@ -89,6 +89,15 @@ var I18N = {
         leftLoc: '中国·湖北',
         qqPopup: '扫码加我 QQ',
         footer: '天地日志 © 2025 | <a href="https://github.com/maohaotian187" target="_blank" rel="noopener">GitHub</a>',
+        tagWeb: '网页',
+        tagPython: 'Python',
+        tagLinux: 'Linux',
+        tagDeepLearning: '深度学习',
+        tagComputationalSimulation: '计算模拟',
+        tagPlanetaryScience: '行星科学',
+        tagBiology: '生物学',
+        tagPopularScience: '科普',
+        tagFieldwork: '野外实践',
         leftTimeline:
             '<li><div class="focus"></div><div>敬请期待</div><div>2025.02</div></li>' +
             '<li><div class="focus"></div><div>ICP备案成功</div><div>2025.02</div></li>' +
@@ -136,6 +145,15 @@ var I18N = {
         leftLoc: 'China-Hubei',
         qqPopup: 'Scan to add me on QQ',
         footer: 'TDRZ © 2025 | <a href="https://github.com/maohaotian187" target="_blank" rel="noopener">GitHub</a>',
+        tagWeb: 'Web',
+        tagPython: 'Python',
+        tagLinux: 'Linux',
+        tagDeepLearning: 'Deep Learning',
+        tagComputationalSimulation: 'Computational Simulation',
+        tagPlanetaryScience: 'Planetary Science',
+        tagBiology: 'Biology',
+        tagPopularScience: 'Popular science',
+        tagFieldwork: 'Fieldwork',
         leftTimeline:
             '<li><div class="focus"></div><div>Coming soon</div><div>2025.02</div></li>' +
             '<li><div class="focus"></div><div>ICP filing approved</div><div>2025.02</div></li>' +
