@@ -74,7 +74,7 @@ function getCookie(name) {
 
 document.addEventListener('DOMContentLoaded', function () {
     var html = document.documentElement;
-    var themeState = getCookie('themeState') || 'Dark';
+    var themeState = getCookie('themeState') || 'Light';
     var checkbox = document.getElementById('myonoffswitch');
 
     function changeTheme(theme) {
@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
         themeState = theme;
     }
 
-    // 默认暗色：Dark = 开关关（默认），Light = 开关开
-    checkbox.checked = (themeState === 'Light');
+    // 默认浅色：Light = 开关开（默认），Dark = 开关关
+    checkbox.checked = (themeState !== 'Dark');
     changeTheme(themeState);
 
     checkbox.addEventListener('change', function () {

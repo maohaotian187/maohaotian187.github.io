@@ -1,7 +1,7 @@
 /*
  * root.css — GitHub Pages 适配版
  * 纯 CSS 变量 + 渐变背景，不依赖任何外部图片 / 字体文件。
- * 深色为默认主题，浅色通过 html[data-theme="Light"] 切换（由 script.js 控制，Cookie 记忆）。
+ * 浅色为默认主题，深色通过 html[data-theme="Dark"] 切换（由 script.js 控制，Cookie 记忆）。
  */
 
 /* ===== 浅色主题 ===== */
@@ -21,7 +21,7 @@ html {
     --left_tag_item: linear-gradient(50deg, #a2d1ff, #ffffff);
     --card_filter: 0px;
     --back_filter: 0px;
-    --back_filter_color: #ffffff66;
+    --back_filter_color: transparent;
     --fill: #000000;
     --loading_bg: radial-gradient(circle, #eaf2ff, #cfe8ff);
 }
